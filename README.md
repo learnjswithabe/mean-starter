@@ -19,7 +19,7 @@ steps to run
 
 npm install
 
-// make sure mongod is running
+// make sure mongod is running - if the 'mongo' command opens the Mongo Shell, it's running
 
 // run the server
 
