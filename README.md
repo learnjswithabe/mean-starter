@@ -10,6 +10,8 @@ node
 
 npm
 
+bower
+
 mongoDB
 
 steps to run
@@ -18,6 +20,8 @@ steps to run
 // install dependencies
 
 npm install
+
+bower install
 
 // make sure mongod is running - if the 'mongo' command opens the Mongo Shell, it's running
 

@@ -4,5 +4,9 @@
 	<h1>Nerds do it online!</h1>
 
 	<p>{{ tagline }}</p>
+
+	<div ng-repeat="nerd in nerds">
+		<a href='/nerds/{{ nerd._id }}'>{{ nerd.name }}</a>
+	</div>
 </div>
 
