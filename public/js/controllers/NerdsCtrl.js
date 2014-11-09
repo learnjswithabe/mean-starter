@@ -1,8 +1,8 @@
-// public/js/controllers/NerdCtrl.js
+// public/js/controllers/NerdsCtrl.js
 
 'use strict';
 
-angular.module('NerdCtrl', []).controller('NerdController', function($scope, $http) {
+angular.module('NerdsCtrl', []).controller('NerdsController', function($scope, $http) {
 	$scope.tagline = 'Known qualifiers:';
 	$scope.nerds = [];
 	function getNerds(){
