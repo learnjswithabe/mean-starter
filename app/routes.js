@@ -9,19 +9,27 @@ module.exports = function(app) {
 	// handle things like api calls
 	// authentication routes
 
-	// sample api route
+	// route to get all nerds
 	app.get('/api/nerds', function(req, res) {
 		console.log('GET /api/nerds');
 		// use mongoose to get all the nerds from the db
 		Nerd.find(function(err, nerds) {
-			console.log('find');
 			// if there is an error retreiving, send the error - nothing fter res.send(err) will execute
 			if (err) {
-				console.log('error');
 				res.send(err);
 			}
-			console.log('no error');
 			res.send(nerds);	// return all the nerds in JSON format
+		});
+	});
+
+	// route to get nerd by id
+	app.get('/api/nerds/:nerdId', function(req, res) {
+		console.log('GET /api/nerds/' + req.params.nerdId);
+		Nerd.findById(req.params.nerdId, function(err, nerd) {
+			if (err) {
+				res.send(err);
+			}
+			res.send(nerd);		// return the nerd with id = nerdId
 		});
 	});
 
