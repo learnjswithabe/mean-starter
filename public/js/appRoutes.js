@@ -17,10 +17,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		})
 
 		// nerd specific pages that will use the NerdContorller
-		// .when('/nerds/:nerdId', {
-		//	templateUrl: 'view/nerd.html',
-		//	controller: 'NerdController'
-		// });
+		.when('/nerds/:nerdId', {
+			templateUrl: 'views/nerd.html',
+			controller: 'NerdController'
+		});
 
 	$locationProvider.html5Mode(true);
 
