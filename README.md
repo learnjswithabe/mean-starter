@@ -19,6 +19,10 @@ mongoDB
 steps to run
 ============
 
+// set up configuratoin
+// * set up a config/db.js file using config/db-example.js as a guide
+// * set up a config/app.js file using the config/app-example.js as a guide
+
 // install dependencies
 
 npm install
