@@ -1,4 +1,6 @@
 node_modules/*
 npm-debug.log
 public/libs/*
+config/db.js
+config/app.js
 
