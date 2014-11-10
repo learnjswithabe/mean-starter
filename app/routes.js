@@ -37,7 +37,8 @@ module.exports = function(app) {
 	app.post('/api/nerds', function(req, res) {
 		console.log('POST /api/nerds');
 		var nerd = new Nerd();	// use mongoose to add a new nerd to the db
-		nerd.name = req.body.name
+		nerd.name = req.body.name;
+		nerd.language = req.body.language;
 		// save the nerd
 		nerd.save(function(err) {
 			if (err) {
