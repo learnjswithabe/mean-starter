@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/github.com/learnjswithabe/mean-starter/status.png)](https://drone.io/github.com/learnjswithabe/mean-starter/latest)
+
 mean-starter
 ============
 
