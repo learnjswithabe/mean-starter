@@ -10,6 +10,18 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
+		// players list
+		.when('/players', {
+			templateUrl: 'views/players.html',
+			controller: 'PlayersController'
+		})
+
+		// player details
+		.when('/players/:playerId', {
+			templateUrl: 'views/player.html',
+			controller: 'PlayerController'
+		})
+
 		// nerds page that will use the NerdController
 		.when('/nerds', {
 			templateUrl: 'views/nerds.html',
