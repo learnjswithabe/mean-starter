@@ -22,18 +22,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'PlayerController'
 		})
 
-		// nerds page that will use the NerdController
-		.when('/nerds', {
-			templateUrl: 'views/nerds.html',
-			controller: 'NerdsController'
-		})
-
-		// nerd specific pages that will use the NerdContorller
-		.when('/nerds/:nerdId', {
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
-		});
-
 	$locationProvider.html5Mode(true);
 
 }]);
