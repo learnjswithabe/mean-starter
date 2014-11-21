@@ -38,6 +38,12 @@ module.exports = function(app) {
 		var player = new Player();	// use mongoose to add a new player to the db
 		player.first = req.body.first;
 		player.last = req.body.last;
+		player.pyds = req.body.pyds;
+		player.ptds = req.body.ptds;
+		player.ruyds = req.body.ruyds;
+		player.rutds = req.body.rutds;
+		player.reyds = req.body.reyds;
+		player.retds = req.body.retds;
 		// save the player
 		player.save(function(err) {
 			if (err) {

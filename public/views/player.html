@@ -1,26 +1,26 @@
 <!-- public/views/player.html -->
 
 <div class="jumbotron text-center">
-	<h1>{{ first }} {{ last }}</h1>
+	<h1>{{ player.first }} {{ player.last }}</h1>
 
 	<table class="table">
 		<tr>
-			<td>Passing Yards</td><td>pyds</td>
+			<td>Passing Yards</td><td>{{ player.pyds }}</td>
 		</tr>
 		<tr>
-			<td>Pass TDs</td><td>ptds</td>
+			<td>Pass TDs</td><td>{{ player.ptds }}</td>
 		</tr>
 		<tr>
-			<td>Rushing Yards</td><td>ruyds</td>
+			<td>Rushing Yards</td><td>{{ player.ruyds }}</td>
 		</tr>
 		<tr>
-			<td>Rushing TDs</td><td>rutds</td>
+			<td>Rushing TDs</td><td>{{ player.rutds }}</td>
 		</tr>
 		<tr>
-			<td>Receiving Yards</td><td>reyds</td>
+			<td>Receiving Yards</td><td>{{ player.reyds }}</td>
 		</tr>
 		<tr>
-			<td>Receiving TDs</td><td>retds</td>
+			<td>Receiving TDs</td><td>{{ player.retds }}</td>
 		</tr>
 	</table>
 
