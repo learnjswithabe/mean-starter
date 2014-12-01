@@ -1,6 +1,8 @@
 // app/routes.js
 
 var Player = require('./models/player');
+var Stats = require('./models/stats');
+var Roster = require('./models/roster');
 
 module.exports = function(app) {
 
@@ -53,7 +55,27 @@ module.exports = function(app) {
 		});
 	});
 
+	// route to get all game stats
+	app.get('/api/game_stats', function(req, res) {
+		console.log('GET /api/game_stats');
+		Stats.find(function(err, game_stats) {
+			if (err) {
+				res.send(err);
+			}
+			res.send(game_stats);
+		});
+	});
 
+	// route to get all game rosters
+	app.get('/api/game_rosters', function(req, res) {
+		console.log('GET /api/game_rosters');
+		Roster.find(function(err, game_rosters) {
+			if (err) {
+				res.send(err);
+			}
+			res.send(game_rosters);
+		});
+	});
 	// front-end routes ======================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
