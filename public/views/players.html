@@ -15,7 +15,7 @@
 				<td><strong>Rec TDs</strong></td>
 			</tr>
 			<tr ng-repeat="player in players">
-				<td><a href='/players/{{ player._id }}'>{{ player.first }}</a></td>
+				<td><a href='/players/{{ player._id }}'>{{ player.name_first }} {{ player.name_last }}</a></td>
 				<td>{{ player.pyds }}</td>
 				<td>{{ player.ptds }}</td>
 				<td>{{ player.ruyds }}</td>
