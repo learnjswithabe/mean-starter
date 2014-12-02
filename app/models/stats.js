@@ -16,6 +16,43 @@ var StatsSchema = new Schema(
 			remaining_timeouts: Number,
 			points: Number,
 			statistics:{
+				fantasy: {
+					team: {
+						id: String,
+						name: String,
+						opp_pts: Number,
+						sack: Number,
+						td: Number,
+						int: Number,
+						fum_rec: Number
+					},
+					players: [{
+						id: String,
+						name: String,
+						jersey: Number,
+						position: String,
+						passing: {
+							att: Number,
+							cmp: Number,
+							yds: Number,
+							td: Number,
+							int: Number
+						},
+						rushing: {
+							att: Number,
+							yds: Number,
+							td: Number,
+							fum: Number
+						},
+						receiving: {
+							tar: Number,
+							rec: Number,
+							yds: Number,
+							td: Number,
+							fum: Number
+						}
+					}]
+				},
 				two_point_conversion: {
 					team: {
 						att: Number,
@@ -663,6 +700,43 @@ var StatsSchema = new Schema(
 			remaining_timeouts: Number,
 			points: Number,
 			statistics:{
+				fantasy: {
+					team: {
+						id: String,
+						name: String,
+						opp_pts: Number,
+						sack: Number,
+						td: Number,
+						int: Number,
+						fum_rec: Number
+					},
+					players: [{
+						id: String,
+						name: String,
+						jersey: Number,
+						position: String,
+						passing: {
+							att: Number,
+							cmp: Number,
+							yds: Number,
+							td: Number,
+							int: Number
+						},
+						rushing: {
+							att: Number,
+							yds: Number,
+							td: Number,
+							fum: Number
+						},
+						receiving: {
+							tar: Number,
+							rec: Number,
+							yds: Number,
+							td: Number,
+							fum: Number
+						}
+					}]
+				},
 				two_point_conversion: {
 					team: {
 						att: Number,

@@ -15,13 +15,13 @@
 				<td><strong>Rec TDs</strong></td>
 			</tr>
 			<tr ng-repeat="player in players">
-				<td><a href='/players/{{ player._id }}'>{{ player.name_first }} {{ player.name_last }}</a></td>
-				<td>{{ player.pyds }}</td>
-				<td>{{ player.ptds }}</td>
-				<td>{{ player.ruyds }}</td>
-				<td>{{ player.rutds }}</td>
-				<td>{{ player.reyds }}</td>
-				<td>{{ player.retds }}</td>
+				<td><a href='/players/{{ player._id }}'>{{ player.name_full }}</a></td>
+				<td>{{ player.passing.yds }}</td>
+				<td>{{ player.passing.td }}</td>
+				<td>{{ player.rushing.yds }}</td>
+				<td>{{ player.rushing.td }}</td>
+				<td>{{ player.receiving.yds }}</td>
+				<td>{{ player.receiving.td }}</td>
 			</tr>
 		</table>
 	</div>
